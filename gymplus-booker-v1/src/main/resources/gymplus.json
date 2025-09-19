@@ -1,0 +1,987 @@
+{
+    "CalendarData": [{
+            "ZoneName": "Main Studio",
+            "ClassesPerHour": [{
+                    "Hour": "1900-01-01T06:00:00",
+                    "ClassesPerDay": [[{
+                                "Id": 279814,
+                                "Status": "Unavailable",
+                                "StatusReason": "Class already ended",
+                                "Name": "Body Sculpt",
+                                "StartTime": "2025-08-26T06:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 2,
+                                    "Limit": 30,
+                                    "Available": 9
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 26,
+                                    "RatingsCount": 3732,
+                                    "Rating": 4.85423,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 280342,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Hyrox Circuit",
+                                "StartTime": "2025-08-27T06:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 1,
+                                    "Limit": 30,
+                                    "Available": 3
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 164,
+                                    "RatingsCount": 572,
+                                    "Rating": 4.89161,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 280670,
+                                "Status": "Awaitable",
+                                "StatusReason": null,
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-28T06:30:00",
+                                "Duration": "PT1H-30M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 3,
+                                    "Available": 0
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 281802,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Functional Fitness",
+                                "StartTime": "2025-08-29T06:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 28,
+                                    "RatingsCount": 1648,
+                                    "Rating": 4.81553,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T09:00:00",
+                    "ClassesPerDay": [[{
+                                "Id": 279863,
+                                "Status": "Unavailable",
+                                "StatusReason": "Class already ended",
+                                "Name": "Lift",
+                                "StartTime": "2025-08-26T09:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 30,
+                                    "Available": 0
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 21,
+                                    "RatingsCount": 4288,
+                                    "Rating": 4.85728,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [{
+                                "Id": 281847,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Functional Fitness",
+                                "StartTime": "2025-08-29T09:30:00",
+                                "Duration": "PT1H-30M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 30,
+                                    "Available": 30
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 28,
+                                    "RatingsCount": 1648,
+                                    "Rating": 4.81553,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T10:00:00",
+                    "ClassesPerDay": [[{
+                                "Id": 288866,
+                                "Status": "Unavailable",
+                                "StatusReason": "Class already ended",
+                                "Name": "Step Aerobics",
+                                "StartTime": "2025-08-26T10:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 2,
+                                    "Limit": 25,
+                                    "Available": 6
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 35,
+                                    "RatingsCount": 1322,
+                                    "Rating": 4.87595,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 280471,
+                                "Status": "Awaitable",
+                                "StatusReason": null,
+                                "Name": "HIIT",
+                                "StartTime": "2025-08-27T10:05:00",
+                                "Duration": "PT30M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 30,
+                                    "Available": 0
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 38,
+                                    "RatingsCount": 1910,
+                                    "Rating": 4.84607,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 280762,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-28T10:05:00",
+                                "Duration": "PT30M",
+                                "BookingIndicator": {
+                                    "Indicator": 3,
+                                    "Limit": 25,
+                                    "Available": 15
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 281896,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Dance Fitness",
+                                "StartTime": "2025-08-29T10:05:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 30,
+                                    "Available": 30
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 37,
+                                    "RatingsCount": 245,
+                                    "Rating": 4.87755,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [{
+                                "Id": 282307,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-31T10:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], []]
+                }, {
+                    "Hour": "1900-01-01T11:00:00",
+                    "ClassesPerDay": [[], [], [{
+                                "Id": 280801,
+                                "Status": "Awaitable",
+                                "StatusReason": null,
+                                "Name": "Active Ageing Strength",
+                                "StartTime": "2025-08-28T11:00:00",
+                                "Duration": "PT40M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 30,
+                                    "Available": 0
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 188,
+                                    "RatingsCount": 115,
+                                    "Rating": 4.96522,
+                                    "Ranking": 5.0
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [{
+                                "Id": 282226,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Body Sculpt",
+                                "StartTime": "2025-08-30T11:15:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Agi Nowak",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 26,
+                                    "RatingsCount": 3732,
+                                    "Rating": 4.85423,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 282355,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Functional Fitness",
+                                "StartTime": "2025-08-31T11:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 28,
+                                    "RatingsCount": 1648,
+                                    "Rating": 4.81553,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], []]
+                }, {
+                    "Hour": "1900-01-01T18:00:00",
+                    "ClassesPerDay": [[{
+                                "Id": 280005,
+                                "Status": "Unavailable",
+                                "StatusReason": "Class already ended",
+                                "Name": "Functional Fitness",
+                                "StartTime": "2025-08-26T18:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 25,
+                                    "Available": 0
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 28,
+                                    "RatingsCount": 1648,
+                                    "Rating": 4.81553,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [{
+                                "Id": 282092,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Functional Fitness",
+                                "StartTime": "2025-08-29T18:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 28,
+                                    "RatingsCount": 1648,
+                                    "Rating": 4.81553,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T19:00:00",
+                    "ClassesPerDay": [[{
+                                "Id": 280054,
+                                "Status": "Unavailable",
+                                "StatusReason": "Class already ended",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-26T19:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 1,
+                                    "Limit": 25,
+                                    "Available": 4
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [], [], []]
+                }
+            ]
+        }, {
+            "ZoneName": "Cycle Studio",
+            "ClassesPerHour": [{
+                    "Hour": "1900-01-01T06:00:00",
+                    "ClassesPerDay": [[], [], [], [], [], [], [{
+                                "Id": 279522,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-09-01T06:30:00",
+                                "Duration": "PT1H-30M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T09:00:00",
+                    "ClassesPerDay": [[], [{
+                                "Id": 280391,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-27T09:30:00",
+                                "Duration": "PT1H-30M",
+                                "BookingIndicator": {
+                                    "Indicator": 1,
+                                    "Limit": 25,
+                                    "Available": 3
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T10:00:00",
+                    "ClassesPerDay": [[], [], [], [{
+                                "Id": 281945,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-29T10:05:00",
+                                "Duration": "PT30M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 282190,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-08-30T10:15:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Agi Nowak",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [{
+                                "Id": 289511,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-09-01T10:30:00",
+                                "Duration": "PT1H-30M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T13:00:00",
+                    "ClassesPerDay": [[], [], [], [], [], [], [{
+                                "Id": 279618,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-09-01T13:00:00",
+                                "Duration": "PT30M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T19:00:00",
+                    "ClassesPerDay": [[], [], [], [], [], [], [{
+                                "Id": 279765,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Indoor Cycle",
+                                "StartTime": "2025-09-01T19:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 25
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 20,
+                                    "RatingsCount": 9514,
+                                    "Rating": 4.82478,
+                                    "Ranking": 4.8
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }
+            ]
+        }, {
+            "ZoneName": "Swimming Pool",
+            "ClassesPerHour": [{
+                    "Hour": "1900-01-01T10:00:00",
+                    "ClassesPerDay": [[], [{
+                                "Id": 280440,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Aqua Fit",
+                                "StartTime": "2025-08-27T10:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 1,
+                                    "Limit": 60,
+                                    "Available": 11
+                                },
+                                "Trainer": "Natalya Almazova",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 27,
+                                    "RatingsCount": 4880,
+                                    "Rating": 4.72684,
+                                    "Ranking": 4.7
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T11:00:00",
+                    "ClassesPerDay": [[], [], [], [{
+                                "Id": 281994,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Aqua Fit",
+                                "StartTime": "2025-08-29T11:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 60,
+                                    "Available": 60
+                                },
+                                "Trainer": "Natalya Almazova",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 27,
+                                    "RatingsCount": 4880,
+                                    "Rating": 4.72684,
+                                    "Ranking": 4.7
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [{
+                                "Id": 279473,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Aqua Fit",
+                                "StartTime": "2025-09-01T11:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 60,
+                                    "Available": 60
+                                },
+                                "Trainer": "Mel Lyons",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 27,
+                                    "RatingsCount": 4880,
+                                    "Rating": 4.72684,
+                                    "Ranking": 4.7
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T19:00:00",
+                    "ClassesPerDay": [[], [], [{
+                                "Id": 280963,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Aqua Fit",
+                                "StartTime": "2025-08-28T19:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 4,
+                                    "Limit": 25,
+                                    "Available": 20
+                                },
+                                "Trainer": "Natalya Almazova",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 27,
+                                    "RatingsCount": 4880,
+                                    "Rating": 4.72684,
+                                    "Ranking": 4.7
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], []]
+                }
+            ]
+        }, {
+            "ZoneName": "Squash Court",
+            "ClassesPerHour": [{
+                    "Hour": "1900-01-01T09:00:00",
+                    "ClassesPerDay": [[], [], [{
+                                "Id": 280714,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Hyrox Circuit",
+                                "StartTime": "2025-08-28T09:20:00",
+                                "Duration": "PT1H-20M",
+                                "BookingIndicator": {
+                                    "Indicator": 1,
+                                    "Limit": 25,
+                                    "Available": 1
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 164,
+                                    "RatingsCount": 572,
+                                    "Rating": 4.89161,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [{
+                                "Id": 279570,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Hyrox Circuit",
+                                "StartTime": "2025-09-01T09:30:00",
+                                "Duration": "PT1H-15M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 30,
+                                    "Available": 30
+                                },
+                                "Trainer": "Martin Mearns",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 164,
+                                    "RatingsCount": 572,
+                                    "Rating": 4.89161,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T12:00:00",
+                    "ClassesPerDay": [[], [], [{
+                                "Id": 334601,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Mat Pilates",
+                                "StartTime": "2025-08-28T12:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 2,
+                                    "Limit": 30,
+                                    "Available": 12
+                                },
+                                "Trainer": "Nicole Burzyk",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 23,
+                                    "RatingsCount": 7747,
+                                    "Rating": 4.85233,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T18:00:00",
+                    "ClassesPerDay": [[], [{
+                                "Id": 336342,
+                                "Status": "FullBooked",
+                                "StatusReason": null,
+                                "Name": "Mat Pilates",
+                                "StartTime": "2025-08-27T18:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 30,
+                                    "Available": 0
+                                },
+                                "Trainer": "Nicole Burzyk",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 23,
+                                    "RatingsCount": 7747,
+                                    "Rating": 4.85233,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [{
+                                "Id": 280915,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Hyrox Circuit",
+                                "StartTime": "2025-08-28T18:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 2,
+                                    "Limit": 25,
+                                    "Available": 10
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 164,
+                                    "RatingsCount": 572,
+                                    "Rating": 4.89161,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [{
+                                "Id": 279716,
+                                "Status": "Unavailable",
+                                "StatusReason": "Too soon to book",
+                                "Name": "Hyrox Circuit",
+                                "StartTime": "2025-09-01T18:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 30,
+                                    "Available": 30
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 164,
+                                    "RatingsCount": 572,
+                                    "Rating": 4.89161,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ]]
+                }, {
+                    "Hour": "1900-01-01T19:00:00",
+                    "ClassesPerDay": [[], [{
+                                "Id": 339341,
+                                "Status": "Awaitable",
+                                "StatusReason": null,
+                                "Name": "Sculpt Pilates",
+                                "StartTime": "2025-08-27T19:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 0,
+                                    "Limit": 15,
+                                    "Available": 0
+                                },
+                                "Trainer": "Nicole Burzyk",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 246,
+                                    "RatingsCount": 1,
+                                    "Rating": 5.0,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], [], []]
+                }, {
+                    "Hour": "1900-01-01T20:00:00",
+                    "ClassesPerDay": [[], [], [{
+                                "Id": 281059,
+                                "Status": "Bookable",
+                                "StatusReason": null,
+                                "Name": "Stretch & Mobility",
+                                "StartTime": "2025-08-28T20:00:00",
+                                "Duration": "PT45M",
+                                "BookingIndicator": {
+                                    "Indicator": 5,
+                                    "Limit": 25,
+                                    "Available": 21
+                                },
+                                "Trainer": "Roisin Costelloe",
+                                "Users": [],
+                                "HasRelatives": false,
+                                "AllowBookSeatNumber": false,
+                                "IsClassAvailableOnline": false,
+                                "ClassRatingSummaryInfo": {
+                                    "TimeTableId": 180,
+                                    "RatingsCount": 53,
+                                    "Rating": 4.86792,
+                                    "Ranking": 4.9
+                                },
+                                "BookingPreReservationId": null
+                            }
+                        ], [], [], [], []]
+                }
+            ]
+        }
+    ],
+    "PagerData": {
+        "Days": ["2025-08-26", "2025-08-27", "2025-08-28", "2025-08-29", "2025-08-30", "2025-08-31", "2025-09-01"],
+        "NextDate": "2025-09-02",
+        "PreviousDate": "2025-08-19",
+        "Date": "2025-08-26",
+        "CanGoForward": true,
+        "CanGoBack": false,
+        "QueryStartDate": "2025-08-26",
+        "QueryEndDate": "2025-09-01"
+    }
+}

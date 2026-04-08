@@ -1,0 +1,66 @@
+name: CI Build
+        run: mvn -B clean verify
+      - name: Build with Maven
+
+          cache: 'maven'
+          distribution: 'temurin'
+          java-version: '17'
+        with:
+        uses: actions/setup-java@v4
+      - name: Set up JDK 17
+
+      - uses: actions/checkout@v4
+    steps:
+        working-directory: spring-cloud
+      run:
+    defaults:
+    runs-on: ubuntu-latest
+    name: Build spring-cloud
+  build-spring-cloud:
+
+        run: ./mvnw -B clean verify
+      - name: Build with Maven
+
+          cache: 'maven'
+          distribution: 'temurin'
+          java-version: '17'
+        with:
+        uses: actions/setup-java@v4
+      - name: Set up JDK 17
+
+      - uses: actions/checkout@v4
+    steps:
+        working-directory: gymplus-booker-v1
+      run:
+    defaults:
+    runs-on: ubuntu-latest
+    name: Build gymplus-booker-v1
+  build-gymplus-booker:
+
+        run: ./mvnw -B clean verify
+      - name: Build with Maven
+
+          cache: 'maven'
+          distribution: 'temurin'
+          java-version: '17'
+        with:
+        uses: actions/setup-java@v4
+      - name: Set up JDK 17
+
+      - uses: actions/checkout@v4
+    steps:
+        working-directory: simplewebapp
+      run:
+    defaults:
+    runs-on: ubuntu-latest
+    name: Build simplewebapp
+  build-simplewebapp:
+jobs:
+
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  push:
+on:
+
+

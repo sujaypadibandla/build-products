@@ -1,4 +1,5 @@
 target/
+!target/simpleapp.jar
 .mvn/
 mvnw
 mvnw.cmd

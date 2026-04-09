@@ -38,6 +38,16 @@ jobs:
         docker login --username AWS --password-stdin \
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
 
+    - name: Create ECR repository (if not exists)
+      working-directory: .
+      run: |
+        aws ecr describe-repositories \
+          --repository-names simpleapp \
+          --region ${{ secrets.AWS_REGION }} 2>/dev/null || \
+        aws ecr create-repository \
+          --repository-name simpleapp \
+          --region ${{ secrets.AWS_REGION }}
+
     - name: Build Docker image
       run: |
         docker build -t simpleapp:latest .

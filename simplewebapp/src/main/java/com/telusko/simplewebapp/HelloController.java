@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String greet() {
-        return "Welcome to Telusko";
+        return "Welcome to SuChi learning";
     }
 
     @GetMapping("/info")
@@ -19,6 +19,6 @@ public class HelloController {
          String javaVersion = System.getProperty("java.version");
          String user= System.getProperty("user.name");
 
-         return "OS: "+os+",  Version: "+version+",  Architechture: "+architecture+",  Java Version: "+javaVersion+",  User: "+user;
+         return "OS1: "+os+",  Version: "+version+",  Architechture: "+architecture+",  Java Version: "+javaVersion+",  User: "+user;
     }
 }

@@ -1,0 +1,9 @@
+target/
+!target/simpleapp.jar
+.mvn/
+mvnw
+mvnw.cmd
+.git
+.gitignore
+*.md
+

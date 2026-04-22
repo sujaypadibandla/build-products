@@ -8,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: simplewebapp
 
     steps:
     - name: Checkout code
@@ -35,6 +38,16 @@ jobs:
         docker login --username AWS --password-stdin \
         ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
 
+    - name: Create ECR repository (if not exists)
+      working-directory: .
+      run: |
+        aws ecr describe-repositories \
+          --repository-names simpleapp \
+          --region ${{ secrets.AWS_REGION }} 2>/dev/null || \
+        aws ecr create-repository \
+          --repository-name simpleapp \
+          --region ${{ secrets.AWS_REGION }}
+
     - name: Build Docker image
       run: |
         docker build -t simpleapp:latest .
@@ -56,6 +69,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
           docker pull ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/simpleapp:latest
           docker stop simpleapp-container || true
           docker rm simpleapp-container || true

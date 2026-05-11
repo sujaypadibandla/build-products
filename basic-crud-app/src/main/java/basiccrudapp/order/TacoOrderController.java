@@ -12,8 +12,9 @@ public class TacoOrderController {
         this.tacoOrderService = tacoOrderService;
     }
 
-    @PostMapping
-    public TacoOrder addOrder(@RequestBody TacoOrderRequest request) {
+    @PostMapping("/add")
+    public TacoOrderResponse addOrder(@RequestBody TacoOrderRequest request) {
+
         return tacoOrderService.placeOrder(request);
     }
 }

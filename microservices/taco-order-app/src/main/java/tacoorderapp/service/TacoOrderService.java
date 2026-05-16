@@ -44,9 +44,11 @@ public class TacoOrderService {
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
         // Fetch account, address, and credit card from taco-account-app
-        AccountDto account = restTemplate.getForObject(
+        AccountDto[] accounts = restTemplate.getForObject(
                 "http://localhost:8081/api/v1/accounts/{accountId}",
-                AccountDto.class, fetched.getAccountId());
+                AccountDto[].class, fetched.getAccountId());
+
+        AccountDto account = accounts[0];
 
         AddressDto address = restTemplate.getForObject(
                 "http://localhost:8081/api/v1/accounts/{accountId}/addresses/{addressId}",

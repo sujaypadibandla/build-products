@@ -16,7 +16,7 @@ public class Taco {
 
     private String name;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private List<Ingredient> ingredients;
 
     private Date createdAt;

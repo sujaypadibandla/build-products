@@ -39,8 +39,8 @@ public class AccountController {
     }
 
     @GetMapping("/{accountId}")
-    public List<Address> getAccountDetails(@PathVariable Long accountId) {
-        return accountService.getAddressesByAccountId(accountId);
+    public Account getAccountDetails(@PathVariable Long accountId) {
+        return accountService.getAccountById(accountId);
     }
 
     @GetMapping("/{accountId}/addresses")

@@ -23,6 +23,10 @@ public class AccountService {
         return accountRepository.findAll();
     }
 
+    public Account getAccountById(Long accountId) {
+        return accountRepository.findById(accountId).orElse(null);
+    }
+
     public String addAccount(Account account) {
         Account out = accountRepository.save(account);
         return "Account added successfully with id: " + out.getId();
@@ -72,4 +76,3 @@ public class AccountService {
                 .findFirst().orElse(null);
     }
 }
-

@@ -1,0 +1,50 @@
+version: '3.8'
+
+# Deploy this file on EC2 at ~/microservices/docker-compose.yml
+# Set environment variables: DB_PASSWORD, AWS_ACCOUNT_ID
+
+services:
+  eureka:
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/eureka-service:latest
+    ports:
+      - "8761:8761"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+    mem_limit: 300m
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8761/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  taco-account:
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/taco-account:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+      - DB_PASSWORD=${DB_PASSWORD}
+      - EUREKA_URL=http://eureka:8761/eureka/
+    mem_limit: 300m
+    restart: unless-stopped
+    depends_on:
+      eureka:
+        condition: service_healthy
+
+  taco-order:
+    image: ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/taco-order:latest
+    ports:
+      - "8082:8082"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+      - DB_PASSWORD=${DB_PASSWORD}
+      - EUREKA_URL=http://eureka:8761/eureka/
+    mem_limit: 300m
+    restart: unless-stopped
+    depends_on:
+      eureka:
+        condition: service_healthy
+      taco-account:
+        condition: service_started
+

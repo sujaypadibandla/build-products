@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  eureka:
+    build: ./eureka-service-registry
+    ports:
+      - "8761:8761"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+    mem_limit: 300m
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8761/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  taco-account:
+    build: ./taco-account-app
+    ports:
+      - "8081:8081"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+      - DB_PASSWORD=${DB_PASSWORD}
+      - EUREKA_URL=http://eureka:8761/eureka/
+    mem_limit: 300m
+    depends_on:
+      eureka:
+        condition: service_healthy
+
+  taco-order:
+    build: ./taco-order-app
+    ports:
+      - "8082:8082"
+    environment:
+      - JAVA_OPTS=-Xmx200m
+      - DB_PASSWORD=${DB_PASSWORD}
+      - EUREKA_URL=http://eureka:8761/eureka/
+    mem_limit: 300m
+    depends_on:
+      eureka:
+        condition: service_healthy
+      taco-account:
+        condition: service_started
+

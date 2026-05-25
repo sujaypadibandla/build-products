@@ -7,8 +7,6 @@ import tacoorderapp.dto.AccountDto;
 import tacoorderapp.dto.AddressDto;
 import tacoorderapp.dto.CreditCardDto;
 
-import java.util.List;
-
 @FeignClient(name = "taco-account-service", url = "http://localhost:8081")
 public interface AccountInterface {
 

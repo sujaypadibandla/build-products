@@ -47,27 +47,55 @@ jobs:
           docker build -t ${{ env.ECR_REGISTRY }}/taco-order:latest .
           docker push ${{ env.ECR_REGISTRY }}/taco-order:latest
 
-      - name: Copy docker-compose to EC2
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ec2-user
-          key: ${{ secrets.EC2_SSH_KEY }}
-          source: "microservices/docker-compose.prod.yml"
-          target: "~/microservices"
-          strip_components: 1
-
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
-          command_timeout: 20m
+          command_timeout: 5m
+          envs: ECR_REGISTRY
           script: |
             aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${{ env.ECR_REGISTRY }}
+            mkdir -p ~/microservices
+            cat > ~/microservices/docker-compose.yml << 'EOF'
+            version: '3.8'
+            services:
+              eureka:
+                image: ${{ env.ECR_REGISTRY }}/eureka-service:latest
+                ports:
+                  - "8761:8761"
+                environment:
+                  - JAVA_OPTS=-Xmx200m
+                mem_limit: 300m
+                restart: unless-stopped
+              taco-account:
+                image: ${{ env.ECR_REGISTRY }}/taco-account:latest
+                ports:
+                  - "8081:8081"
+                environment:
+                  - JAVA_OPTS=-Xmx200m
+                  - DB_PASSWORD=${DB_PASSWORD}
+                  - EUREKA_URL=http://eureka:8761/eureka/
+                mem_limit: 300m
+                restart: unless-stopped
+                depends_on:
+                  - eureka
+              taco-order:
+                image: ${{ env.ECR_REGISTRY }}/taco-order:latest
+                ports:
+                  - "8082:8082"
+                environment:
+                  - JAVA_OPTS=-Xmx200m
+                  - DB_PASSWORD=${DB_PASSWORD}
+                  - EUREKA_URL=http://eureka:8761/eureka/
+                mem_limit: 300m
+                restart: unless-stopped
+                depends_on:
+                  - eureka
+                  - taco-account
+            EOF
             cd ~/microservices
-            cp docker-compose.prod.yml docker-compose.yml
             docker compose pull
             docker compose down
             docker compose up -d

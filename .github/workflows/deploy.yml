@@ -47,16 +47,28 @@ jobs:
           docker build -t ${{ env.ECR_REGISTRY }}/taco-order:latest .
           docker push ${{ env.ECR_REGISTRY }}/taco-order:latest
 
+      - name: Copy docker-compose to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "microservices/docker-compose.prod.yml"
+          target: "~/microservices"
+          strip_components: 1
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 20m
           script: |
             aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${{ env.ECR_REGISTRY }}
             cd ~/microservices
-            docker compose -f docker-compose.yml pull
-            docker compose -f docker-compose.yml down
-            docker compose -f docker-compose.yml up -d
+            cp docker-compose.prod.yml docker-compose.yml
+            docker compose pull
+            docker compose down
+            docker compose up -d
 
